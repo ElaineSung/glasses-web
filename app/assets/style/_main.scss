@@ -1,6 +1,6 @@
 .homebanner {
 	min-height: 840px;
-	background-image: url("/assets/images/banner.png");
+	background-image: url("../images/banner.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -100,7 +100,7 @@
 	}
 }
 .cobrand {
-	background-image: url("/assets/images/cobrand_bg.png");
+	background-image: url("../images/cobrand_bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -115,10 +115,10 @@
 		background-position: center;
     	padding-top: 84.259%;
 		&-1 {
-			background-image: url("/assets/images/product-8.png");
+			background-image: url("../images/product-8.png");
 		}
 		&-2 {
-			background-image: url("/assets/images/product-9.png");
+			background-image: url("../images/product-9.png");
 		}
 		&::before {
 			content: '';
