@@ -1,23 +1,9 @@
-$color: #00cc99;
+@import "_variable.scss";
+@import "_reset.scss";
+@import "_base.scss";
+@import "_modules.scss";
+@import "_utilities.scss";
+@import "_layout.scss";
+@import "_main.scss";
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap');

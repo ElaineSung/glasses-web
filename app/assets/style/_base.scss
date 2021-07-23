@@ -1,0 +1,20 @@
+body,html {
+	font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+}
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+/* img */
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+/* link */
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+a:hover, a:active, a:fucus{
+	text-decoration: none;
+}

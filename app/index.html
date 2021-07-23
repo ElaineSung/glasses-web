@@ -4,9 +4,158 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-
-<h1>
-  這是一段話
-</h1>
-
-<div class="box"></div>
+<div class="homebanner d-flex align-items-center">
+	<div class="container">
+		<div class="homebanner__title">
+			<span>Promise-Desert 2020 早春系列</span>
+			<h1>看得清，才能看得遠</h1>
+		</div>
+	</div>
+</div>
+<div class="sellpoint section">
+	<div class="container">
+		<h2 class="center">用專業的心，做專業的事</h2>
+		<ul class="row">
+			<li class="col-12 col-sm-6 col-lg-3 sellpoint__item">
+				<div>
+					<span class="material-icons material-icons-outlined sellpoint__item-img">paid</span>
+					<h4 class="sellpoint__item-title">單一價格</h4>
+					<p class="sellpoint__item-desc">無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+				</div>
+			</li>
+			<li class="col-12 col-sm-6 col-lg-3 sellpoint__item">
+				<div>
+					<span class="material-icons material-icons-outlined sellpoint__item-img">schedule</span>
+					<h4 class="sellpoint__item-title">20 分鐘即可取件</h4>
+					<p class="sellpoint__item-desc">為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+				</div>
+			</li>
+			<li class="col-12 col-sm-6 col-lg-3 sellpoint__item">
+				<div>
+					<span class="material-icons material-icons-outlined sellpoint__item-img">favorite_border</span>
+					<h4 class="sellpoint__item-title">安心售後服務</h4>
+					<p class="sellpoint__item-desc">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+				</div>
+			</li>
+			<li class="col-12 col-sm-6 col-lg-3 sellpoint__item">
+				<div>
+					<span class="material-icons material-icons-outlined sellpoint__item-img">voicemail</span>
+					<h4 class="sellpoint__item-title">關於鏡片</h4>
+					<p class="sellpoint__item-desc">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="series section">
+	<div class="container">
+		<h2 class="center">經典系列鏡框</h2>
+		<ul>
+			<li class="series__item mt-4">
+				<a href="#" class="row align-items-center">
+					<div class="col-12 col-md-7">
+						<img src="./assets/images/product-1.png" alt="optical">
+					</div>
+					<h2 class="col-md-5 series__item-title d-flex align-items-center">
+						<span class="material-icons material-icons-outlined series__item-icon">auto_awesome</span>
+						optical
+					</h2>
+				</a>
+			</li>
+			<li class="series__item mt-4">
+				<a href="#" class="row align-items-center flex-row-reverse">
+					<div class="col-12 col-md-7">
+						<img src="./assets/images/product-2.png" alt="sunglasses">
+					</div>
+					<h2 class="col-md-5 series__item-title d-flex align-items-center">
+						<span class="material-icons material-icons-outlined series__item-icon">light_mode</span>
+						sunglasses
+					</h2>
+				</a>
+			</li>
+			<li class="series__item">
+				<a href="#" class="row align-items-center">
+					<div class="col-12 col-md-7">
+						<img src="./assets/images/product-3.png" alt="functional">
+					</div>
+					<h2 class="col-md-5 series__item-title d-flex align-items-center">
+						<span class="material-icons material-icons-outlined series__item-icon">flash_on</span>
+						functional
+					</h2>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="cobrand section">
+	<div class="container">
+		<h2 class="cobrand__title center">聯名設計鏡框</h2>
+		<ul class="row">
+			<li class="col-12 col-sm-6 cobrand__box">
+				<a href="#" class="cobrand__box-img cobrand__box-img-1">
+					<p class="cobrand__box-title">Double A+</p>
+				</a>
+			</li>
+			<li class="col-12 col-sm-6 cobrand__box">
+				<a href="#" class="cobrand__box-img cobrand__box-img-2">
+					<p class="cobrand__box-title">YOUTH</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="recommend section">
+	<div class="container">
+		<h2 class="center">顧客推薦</h2>
+		<ul class="row">
+			<li class="col-12 col-sm-6 col-lg-3 recommend__card-wrap">
+				<div class="recommend__card">
+					<img class="recommend__card-img" src="./assets/images/recommend-1.jpg" alt="Jessy">
+					<div class="recommend__card-desc d-flex justify-content-between flex-column">
+						<div>
+							<h6 class="recommend__card-name mt-1">Jessy</h6>
+							<p class="recommend__card-say">眼鏡品質優良，下次還會想來這邊購買！</p>
+						</div>
+						<h6 class="recommend__card-date">2021/06/20</h6>
+					</div>
+				</div>
+			</li>
+			<li class="col-12 col-sm-6 col-lg-3 recommend__card-wrap">
+				<div class="recommend__card">
+					<img class="recommend__card-img" src="./assets/images/recommend-2.jpg" alt="凱倫">
+					<div class="recommend__card-desc d-flex justify-content-between flex-column">
+						<div>
+							<h6 class="recommend__card-name mt-1">凱倫</h6>
+							<p class="recommend__card-say">做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+						</div>
+						<h6 class="recommend__card-date">2021/04/18</h6>
+					</div>
+				</div>
+			</li>
+			<li class="col-12 col-sm-6 col-lg-3 recommend__card-wrap">
+				<div class="recommend__card">
+					<img class="recommend__card-img" src="./assets/images/recommend-3.jpg" alt="悠悠">
+					<div class="recommend__card-desc d-flex justify-content-between flex-column">
+						<div>
+							<h6 class="recommend__card-name mt-1">悠悠</h6>
+							<p class="recommend__card-say">謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+						</div>
+						<h6 class="recommend__card-date">2020/12/250</h6>
+					</div>
+				</div>
+			</li>
+			<li class="col-12 col-sm-6 col-lg-3 recommend__card-wrap">
+				<div class="recommend__card">
+					<img class="recommend__card-img" src="./assets/images/recommend-4.jpg" alt="Kyuan">
+					<div class="recommend__card-desc d-flex justify-content-between flex-column">
+						<div>
+							<h6 class="recommend__card-name mt-1">Kyuan</h6>
+							<p class="recommend__card-say">服務很好，品質沒有任何問題，非常喜歡。</p>
+						</div>
+						<h6 class="recommend__card-date">2020/10/31</h6>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
