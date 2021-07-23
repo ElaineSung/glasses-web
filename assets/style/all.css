@@ -882,9 +882,9 @@ a:hover, a:active, a:fucus {
       height: 36px;
       margin-right: 22px; }
       .footer-contact .icon-phone {
-        background-image: url("/assets/images/icon-phone.svg"); }
+        background-image: url("../images/icon-phone.svg"); }
       .footer-contact .icon-mail {
-        background-image: url("/assets/images/icon-mail.svg"); }
+        background-image: url("../images/icon-mail.svg"); }
     @media (max-width: 768px) {
       .footer-contact {
         margin: 20px 0; }
@@ -961,7 +961,7 @@ a:hover, a:active, a:fucus {
 
 .homebanner {
   min-height: 840px;
-  background-image: url("/assets/images/banner.png");
+  background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1043,7 +1043,7 @@ a:hover, a:active, a:fucus {
             flex-direction: row; } }
 
 .cobrand {
-  background-image: url("/assets/images/cobrand_bg.png");
+  background-image: url("../images/cobrand_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -1057,9 +1057,9 @@ a:hover, a:active, a:fucus {
     background-position: center;
     padding-top: 84.259%; }
     .cobrand__box-img-1 {
-      background-image: url("/assets/images/product-8.png"); }
+      background-image: url("../images/product-8.png"); }
     .cobrand__box-img-2 {
-      background-image: url("/assets/images/product-9.png"); }
+      background-image: url("../images/product-9.png"); }
     .cobrand__box-img::before {
       content: '';
       position: absolute;
