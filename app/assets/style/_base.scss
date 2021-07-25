@@ -1,5 +1,5 @@
 body,html {
-	font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+	font-family: 'Noto Sans TC', 'Roboto', sans-serif;
 }
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -17,4 +17,61 @@ a{
 }
 a:hover, a:active, a:fucus{
 	text-decoration: none;
+}
+
+/* heading */
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+h1 {
+	@include font-size(64px);
+	font-weight: bold;
+	@media(max-width: 768px) {
+		@include font-size(48px);
+	}
+	@media(max-width: 575px) {
+		@include font-size(32px);
+	}
+}
+h2 {
+	@include font-size(48px);
+	font-weight: bold;
+	color: $color-dark-red;
+	margin-bottom: $spacing-lv9;
+	@media(max-width: 768px) {
+		@include font-size(32px);
+		margin-bottom: $spacing-lv8;
+	}
+	@media(max-width: 575px) {
+		font-size: 24px;
+		line-height: 35px;
+		margin-bottom: $spacing-lv5;
+	}
+}
+h3 {
+	@include font-size(32px);
+	font-weight: 500;
+}
+h4 {
+	@include font-size(24px);
+	font-weight: bold;
+	color: $color-dark-red;
+}
+h5 {
+	@include font-size(20px);
+	margin-bottom: $spacing-lv5;
+	@media(max-width: 768px) {
+		@include font-size(16px);
+		margin-bottom: $spacing-lv4;
+	}
+	@media(max-width: 575px) {
+		margin-bottom: $spacing-lv2;
+	}
+}
+h6 {
+	@include font-size(14px);
+}
+p {
+	@include font-size(16px);
+	letter-spacing: 0;
 }
