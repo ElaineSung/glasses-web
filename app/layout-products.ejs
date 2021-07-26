@@ -7,9 +7,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title><%- title %></title>
 	<link rel="stylesheet" href="./assets/style/all.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 
@@ -30,6 +27,25 @@
 		</div>
 	</header>
 	<div class="main">
+		<div class="product-tab">
+			<ul class="product-tab__menu row no-gutters center">
+				<li class="product-tab__item col-12 col-sm-4">
+					<a href="products-optical.html" class="product-tab__link u-en d-flex align-items-center justify-content-center active">
+						<span class="material-icons material-icons-outlined product-tab__icon">auto_awesome</span>optical
+					</a>
+				</li>
+				<li class="product-tab__item col-12 col-sm-4">
+					<a href="#" class="product-tab__link u-en d-flex align-items-center justify-content-center">
+						<span class="material-icons material-icons-outlined product-tab__icon">light_mode</span>sunglasses
+					</a>
+				</li>
+				<li class="product-tab__item col-12 col-sm-4">
+					<a href="#" class="product-tab__link u-en d-flex align-items-center justify-content-center">
+						<span class="material-icons material-icons-outlined product-tab__icon">flash_on</span>functional
+					</a>
+				</li>
+			</ul>
+		</div>
 		<%- contents %>
 	</div>
   	<footer class="footer">

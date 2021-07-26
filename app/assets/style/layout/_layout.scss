@@ -5,30 +5,24 @@
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	@media(max-width: 768px) {
+	@include mobile() {
 		padding-left: 40px;
 		padding-right: 40px;
 	}
-	@media(max-width: 575px) {
+	@include iphone() {
 		padding-left: 15px;
 		padding-right: 15px;
-	}
-}
-.container--form {
-	max-width: 760px;
-	@media(max-width: 768px) {
-		max-width: 530px;
 	}
 }
 /* section */
 .section {
     padding-top: 60px;
     padding-bottom: 80px;
-	@media(max-width: 768px) {
+	@include mobile() {
 		padding-top: 40px;
-    	padding-bottom: 56px;
+		padding-bottom: 56px;
 	}
-	@media(max-width: 575px) {
+	@include iphone() {
 		padding-top: 32px;
     	padding-bottom: 40px;
 	}
@@ -67,7 +61,7 @@
 				}
 			}
 		}
-		@media(max-width: 992px) {
+		@include pad() {
 			padding: 0 20px 0 40px;
 			&__link {
 				margin: 0;
@@ -75,7 +69,7 @@
 			}
 		}
 	}
-	@media(max-width: 767px) {
+	@include mobile-767() {
 		&-nav {
 			height: auto;
     		flex-direction: column;
@@ -116,11 +110,11 @@
 .footer {
 	background-color: $color-primary;
 	color: $color-white;
-	padding-top: $spacing-lv9;
-    padding-bottom: $spacing-lv9;
-	@media(max-width: 767px) {
-		padding-top: $spacing-lv6;
-		padding-bottom: $spacing-lv6;
+	padding-top: $spacing-9;
+    padding-bottom: $spacing-9;
+	@include mobile-767() {
+		padding-top: $spacing-6;
+		padding-bottom: $spacing-6;
 	}
 	&-nav {
 		&__link {
@@ -129,19 +123,19 @@
 		li:first-child a{
 			padding-left: 0;
 		}
-		@media(max-width: 768px) {
+		@include mobile() {
 			&__link {
 				padding: 4px 20px;
 		 	}
 		}
-		@media(max-width: 767px) {
+		@include mobile-767() {
 			display: none;
 		}
 	}
 	&-contact {
 		margin: 24px 0;
         li {
-            margin-bottom: $spacing-lv4;
+            margin-bottom: $spacing-4;
             &:last-child {
 				margin-bottom: 0;
 			}
@@ -166,7 +160,7 @@
 				background-image: url("../images/icon-mail.svg");
 			}
 		}
-		@media(max-width: 768px) {
+		@include mobile() {
 			margin: 20px 0;
 			li {
 				margin-bottom: 12px;
@@ -179,8 +173,8 @@
 				height: 24px;
 				margin-right: 8px;
 			}
-		  }
-		  @media(max-width: 767px) {
+		}
+		@include mobile-767() {
 			margin-top: 0;
 			li {
 				margin-bottom: 6px;
@@ -209,8 +203,7 @@
 				opacity: .8;
 			}
 		}
-		@media(max-width: 768px) {
-			min-height: 24px;
+		@include mobile() {
 			li {
 				margin-right: 24px;
 			}
@@ -222,7 +215,7 @@
 	}
 	&-copyright {
 		border-top: 1px solid $color-white;
-		padding-top: $spacing-lv9;
+		padding-top: $spacing-9;
 		&__link {
 			@include font-size(14px);
 			margin-right: 48px;
@@ -230,13 +223,13 @@
 				margin-right: 0;
 			}
 		}
-		@media(max-width: 768px) {
+		@include mobile() {
 			padding-top: 24px;
 			&__link {
 				margin-right: 24px;
 			}
 		}
-		@media(max-width: 767px) {
+		@include mobile-767() {
 			display: block;
 			padding-top: 16px;
 			&__p {

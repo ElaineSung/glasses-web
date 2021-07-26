@@ -14,6 +14,7 @@ img {
 a{
 	text-decoration: none;
 	display: inline-block;
+	color: inherit;
 }
 a:hover, a:active, a:fucus{
 	text-decoration: none;
@@ -26,10 +27,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	@include font-size(64px);
 	font-weight: bold;
-	@media(max-width: 768px) {
+	@include mobile() {
 		@include font-size(48px);
 	}
-	@media(max-width: 575px) {
+	@include iphone() {
 		@include font-size(32px);
 	}
 }
@@ -37,15 +38,15 @@ h2 {
 	@include font-size(48px);
 	font-weight: bold;
 	color: $color-dark-red;
-	margin-bottom: $spacing-lv9;
-	@media(max-width: 768px) {
+	margin-bottom: $spacing-9;
+	@include mobile() {
 		@include font-size(32px);
-		margin-bottom: $spacing-lv8;
+		margin-bottom: $spacing-8;
 	}
-	@media(max-width: 575px) {
+	@include iphone() {
 		font-size: 24px;
 		line-height: 35px;
-		margin-bottom: $spacing-lv5;
+		margin-bottom: $spacing-5;
 	}
 }
 h3 {
@@ -59,13 +60,13 @@ h4 {
 }
 h5 {
 	@include font-size(20px);
-	margin-bottom: $spacing-lv5;
-	@media(max-width: 768px) {
+	margin-bottom: $spacing-5;
+	@include mobile() {
 		@include font-size(16px);
-		margin-bottom: $spacing-lv4;
+		margin-bottom: $spacing-4;
 	}
-	@media(max-width: 575px) {
-		margin-bottom: $spacing-lv2;
+	@include iphone() {
+		margin-bottom: $spacing-2;
 	}
 }
 h6 {

@@ -18,9 +18,8 @@
 	user-select: none;
 	user-drag: none;
 	transition: all 0.3s;
-	@media (max-width: 768px) {
-		font-size: 14px;
-		line-height: 21px;
+	@include mobile() {
+		@include font-size(14px);
 	}
 }
 .btn.btn--primary{
@@ -40,11 +39,11 @@
 .btn.btn--lg{
 	min-width: 350px;
     min-height: 54px;
-	@media (max-width: 768px) {
+	@include mobile() {
 		min-width: 210px;
 		min-height: 40px;
 	}
-	@media (max-width: 576px) {
+	@include iphone() {
 		min-width: 165px;
 		min-height: 36px;
 	}

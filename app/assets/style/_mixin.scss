@@ -2,3 +2,29 @@
     font-size: $size;
     line-height: $size * 1.5;
 }
+
+@mixin pad {
+    @media (max-width: 992px){
+        @content
+    }
+};
+@mixin pad-991 {
+    @media (max-width: 991px){
+        @content
+    }
+};
+@mixin mobile {
+    @media (max-width: 768px){
+        @content
+    }
+};
+@mixin mobile-767 {
+    @media (max-width: 767px){
+        @content
+    }
+};
+@mixin iphone {
+    @media (max-width: 575px){
+        @content
+    }
+};
