@@ -1,0 +1,70 @@
+.shops {
+	&__title {
+		color: $color-black;
+		padding-left: $spacing-4;
+		border-left: 8px solid #9f1213;
+		margin-bottom: 60px;
+	}
+	.form {
+		margin-bottom: $spacing-8;
+		.label {
+			font-size: 24px;
+			margin-right: $spacing-5;
+		}
+		.menu {
+			width: 324px;
+			max-width: 324px;
+		}
+	}
+	&__card-row {
+		margin-top: -$spacing-8;
+	}
+	&__card-wrap {
+		margin-top: $spacing-8;
+	}
+	@include pad() {
+		&__title {
+			border-left: 4px solid #9f1213;
+			margin-bottom: $spacing-9;
+		}
+		.form {
+			margin-bottom: $spacing-6;
+			.label {
+				font-size: 16px;
+			}
+			.menu {
+				width: 237px;
+			}
+		}
+		&__card-row {
+			margin-top: -$spacing-5;
+		}
+		&__card-wrap {
+			margin-top: $spacing-5;
+		}
+	}
+	@include iphone() {
+		&__title {
+			font-size: 28px;
+			padding-left: $spacing-2;
+			margin-bottom: $spacing-6;
+		}
+		.form {
+			margin-bottom: $spacing-5;
+			.label {
+				font-size: 14px;
+				margin-right: $spacing-3;
+			}
+			.menu {
+				max-width: 277px;
+				width: 100%;
+			}
+		}
+		&__card-row {
+			margin-top: -$spacing-4;
+		}
+		&__card-wrap {
+			margin-top: $spacing-4;
+		}
+	}
+}
